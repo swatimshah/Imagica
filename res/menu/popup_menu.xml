@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  
+        android:id="@+id/chartEntry"  
+        android:title="Chart Entry"/>        
+    <item  
+        android:id="@+id/chartEntry"  
+        android:title="Chart View"/>        
+    <item  
+        android:id="@+id/dailyNotes"  
+        android:title="Daily Notes"/>
+    <item  
+        android:id="@+id/history"  
+        android:title="History"/>
+    <item  
+        android:id="@+id/physicalExamination"  
+        android:title="Physical Examination"/>
+    <item  
+        android:id="@+id/phyOrd"  
+        android:title="Physician's Orders"/>
+    <item  
+        android:id="@+id/ivfluids"  
+        android:title="I. V. Fluids"/>
+    <item  
+        android:id="@+id/consultRecord"  
+        android:title="Consultation Record"/>
+    <item  
+        android:id="@+id/narrativeSummary"  
+        android:title="Narrative Summary"/>
+    <item  
+        android:id="@+id/investSheet"  
+        android:title="Investigation Sheet"/>                   
+</menu>   

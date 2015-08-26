@@ -1,0 +1,312 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+         
+    >
+
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+     	android:isScrollContainer="true"
+     	android:background="#F0FFFF"
+       > 
+
+
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  
+    android:id="@+id/testLayout"   
+    >
+
+
+
+        <LinearLayout
+            android:id="@+id/chartEntryLayout"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+			android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/printPatientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"/>
+
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ChartEntryActivity"    
+     >
+
+            <TextView
+                android:id="@+id/printAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                />
+                        
+            <TextView
+                android:id="@+id/printBed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:layout_toRightOf="@+id/printAge"
+                />
+                        
+</RelativeLayout>
+
+            <TextView
+                android:id="@+id/printAdmissionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:ellipsize="none"/>
+
+
+            <TextView
+                android:id="@+id/printICU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"/>
+                
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ChartEntryActivity"    
+     >
+
+
+    <TextView
+         android:id="@+id/aDate"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         >
+	</TextView>
+     
+     <ImageButton
+         android:id="@+id/calendarButton"
+         android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/aDate"
+         android:src="@drawable/calendar" />
+
+        <EditText
+            android:text=""
+            android:id="@+id/aTime"
+	        android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"             
+            android:gravity="center_horizontal"
+            android:hint="1:00"
+            android:layout_toRightOf="@+id/calendarButton"/>
+
+
+</RelativeLayout>
+
+</LinearLayout>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"    
+    android:layout_below="@+id/chartEntryLayout"
+    android:layout_weight="1">
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="18dp"
+            android:text="Enter Clinical Data"
+            android:gravity="center"
+            android:layout_span="3"></TextView>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/TextView03"
+            android:text="Parameter"> 
+            android:textStyle="bold"
+            android:typeface="serif"></TextView>
+        <TextView
+            android:id="@+id/TextView04"
+            android:text="Value"
+            android:textStyle="bold"
+            android:typeface="serif"></TextView>
+        <!--TextView
+            android:id="@+id/TextView03"
+            android:text="Time"
+            android:textStyle="bold"
+            android:typeface="serif"></TextView-->
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="Resp"
+            android:id="@+id/respLbl"
+            android:textStyle="bold"></TextView>
+        <EditText
+            android:id="@+id/respValue"
+            android:text=""
+            android:gravity="center_horizontal"></EditText>
+        <!--EditText
+            android:text=""
+            android:id="@+id/respTime"
+            android:gravity="center_horizontal"></EditText-->
+    </TableRow> 
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="BP"
+            android:id="@+id/bpLbl"
+            android:textStyle="bold"></TextView>
+        <EditText
+            android:id="@+id/bpValue"
+            android:text=""
+            android:gravity="center_horizontal"></EditText>
+        <!--EditText
+            android:text=""
+            android:id="@+id/bpTime"
+            android:gravity="center_horizontal"></EditText-->
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="Temp"
+            android:id="@+id/tempLbl"
+            android:textStyle="bold"></TextView>
+        <EditText
+            android:id="@+id/tempValue"
+            android:text=""
+            android:gravity="center_horizontal"></EditText>
+        <!--EditText
+            android:text=""
+            android:id="@+id/tempTime"
+            android:gravity="center_horizontal"></EditText-->
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="Pulse"
+            android:id="@+id/pulseLbl"
+            android:textStyle="bold"></TextView>
+        <EditText
+            android:id="@+id/pulseValue"
+            android:text=""
+            android:gravity="center_horizontal"></EditText>
+        <!--EditText
+            android:text=""
+            android:id="@+id/pulseTime"
+            android:gravity="center_horizontal"></EditText-->
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="PAP"
+            android:id="@+id/papLbl"
+            android:textStyle="bold"></TextView>
+        <EditText
+            android:id="@+id/papValue"
+            android:text=""
+            android:gravity="center_horizontal"></EditText>
+        <!--EditText
+            android:text=""
+            android:id="@+id/papTime"
+            android:gravity="center_horizontal"></EditText-->
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="CVP"
+            android:id="@+id/cvpLbl"
+            android:textStyle="bold"></TextView>
+        <EditText
+            android:id="@+id/cvpValue"
+            android:text=""
+            android:gravity="center_horizontal"></EditText>
+        <!--EditText
+            android:text=""
+            android:id="@+id/cvpTime"
+            android:gravity="center_horizontal"></EditText-->
+    </TableRow>
+
+</TableLayout>
+
+
+            <TextView
+                android:id="@+id/errorMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tableLayout1"
+                 />
+
+
+  <ImageButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_arrow" 
+		android:layout_alignParentBottom="true"        				        
+        />
+
+<Button
+    android:id="@+id/saveChartData"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#ffffff"
+    android:background="@drawable/mybutton"
+    android:layout_marginLeft="20px"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"    
+    android:text="Save" />
+
+<TableLayout
+    android:id="@+id/TableLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0" 
+    android:layout_below="@+id/chartEntryLayout"
+    >
+    
+</TableLayout>
+
+
+</RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

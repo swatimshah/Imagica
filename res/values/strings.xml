@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Imagica</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_imagica_bp">BP</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_imagica_resp">RESP</string>
+    <string name="title_activity_admit_patient">Admit Patient</string>
+    <string name="title_activity_monitor_patient">Monitor Patient</string>
+    <string name="app_label">Monitor Patient</string>
+    <string name="search_hint">Patient Name or Bed or ICU</string>
+
+    <string-array name="icu_arrays">
+        <item>Siddhivinayak</item>
+        <item>Rajsthan</item>
+    </string-array>
+
+    <string name="title_activity_daily_notes">Daily Notes</string>
+    <string name="title_activity_chart_entry">Chart Entry</string>
+
+</resources>

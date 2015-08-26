@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="#F0FFFF">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"> 
+
+
+        <LinearLayout
+            android:id="@+id/admitPatientLayout"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true"
+            >
+
+
+            <TextView
+                android:id="@+id/lblPatientName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:text="Patient Name" />
+                        
+
+            <EditText
+                android:id="@+id/patientName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textSize="16.0sp"/>
+
+            <TextView
+                android:id="@+id/lblAge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+				android:layout_marginTop = "10dp"                  
+                android:text="Age" />
+                        
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16.0sp"/>
+
+
+            <TextView
+                android:id="@+id/lblBed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:layout_marginTop = "10dp"  
+                android:text="Bed" />
+                        
+
+            <EditText
+                android:id="@+id/bed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16.0sp"/>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ImagicaActivity"    
+     >
+
+
+            <TextView
+                android:id="@+id/lblAdmissionDate" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:layout_marginTop = "10dp"  
+                android:text="Admission Date" />
+                        
+     <ImageButton
+         android:id="@+id/calendarButton"
+         android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/lblAdmissionDate"
+         android:src="@drawable/calendar" />
+
+</RelativeLayout>
+
+            <EditText
+                android:id="@+id/admissionDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textSize="16.0sp"/>
+
+            <!--TextView
+                android:id="@+id/admissionDateExample"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:text="(For example - 01/07/2014 or 27/02/2015)" /-->
+
+
+            <TextView
+                android:id="@+id/lblICU"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:layout_marginTop="10dp"
+                android:text="ICU  " />
+
+
+ 			<Spinner
+        		android:id="@+id/spinner1"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:entries="@array/icu_arrays"/>
+
+<Button
+    android:id="@+id/admit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:textColor="#ffffff"
+	android:layout_marginTop = "10dp"    
+    android:background="@drawable/mybutton"
+    android:onClick="admitPatient"
+    android:text="Admit" />
+
+
+            <TextView
+                android:id="@+id/resultMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:layout_marginTop="10dp"
+                 />
+
+            <TextView
+                android:id="@+id/errorMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:layout_marginTop="10dp"
+                 />
+
+
+</LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>
+   

@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="#F0FFFF">
+
+        <LinearLayout
+            android:id="@+id/patientInfoLayout"        
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/printPatientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"/>
+
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ImagicaActivity"    
+     >
+
+            <TextView
+                android:id="@+id/printAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                />
+                        
+            <TextView
+                android:id="@+id/printBed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:layout_toRightOf="@+id/printAge"
+                />
+                        
+</RelativeLayout>
+
+            <TextView
+                android:id="@+id/printAdmissionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:ellipsize="none"/>
+
+
+            <TextView
+                android:id="@+id/printICU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"/>
+                
+    <TextView
+         android:id="@+id/aDate"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         />
+
+</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notesLayout"        
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/patientInfoLayout"
+            >
+
+
+            <TextView
+                android:id="@+id/lblTemperature"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+				android:layout_marginTop = "10dp"                  
+                android:text="Temperature" />
+                        
+
+            <EditText
+                android:id="@+id/temperature"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16.0sp"/>
+	
+            <TextView
+                android:id="@+id/lblPulse"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+				android:layout_marginTop = "10dp"                  
+                android:text="Pulse" />
+                        
+
+            <EditText
+                android:id="@+id/pulse"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16.0sp"/>
+	
+            <TextView
+                android:id="@+id/lblRespiration"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+				android:layout_marginTop = "10dp"                  
+                android:text="Respiration" />
+                        
+
+            <EditText
+                android:id="@+id/respiration"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16.0sp"/>
+
+            <TextView
+                android:id="@+id/lblBP"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+				android:layout_marginTop = "10dp"                  
+                android:text="BP" />
+                        
+
+            <EditText
+                android:id="@+id/bp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="16.0sp"/>
+
+                
+</LinearLayout>
+
+  <ImageButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_arrow" 
+		android:layout_alignParentBottom="true"        				        
+        />
+
+<TableLayout
+    android:id="@+id/TableLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0" 
+    android:layout_below="@+id/patientInfoLayout"
+    >
+</TableLayout>
+
+</RelativeLayout>
+ 

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+
+        <LinearLayout
+            android:id="@+id/monitorPatientLayout"        
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:descendantFocusability="blocksDescendants">
+
+            <TextView
+                android:id="@+id/printPatientName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"/>
+
+
+            <TextView
+                android:id="@+id/printAge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"/>
+                        
+
+            <TextView
+                android:id="@+id/printBed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"/>
+                        
+
+            <TextView
+                android:id="@+id/printAdmissionDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"/>
+
+
+            <TextView
+                android:id="@+id/printICU"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"/>
+
+
+
+</LinearLayout>
+
+
+    
+</RelativeLayout>    

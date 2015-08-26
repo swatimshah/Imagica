@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="#F0FFFF">
+
+
+        <LinearLayout
+            android:id="@+id/imagicaLayout"        
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/printPatientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"/>
+
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ImagicaActivity"    
+     >
+
+            <TextView
+                android:id="@+id/printAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                />
+                        
+            <TextView
+                android:id="@+id/printBed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:layout_toRightOf="@+id/printAge"
+                />
+                        
+</RelativeLayout>
+
+            <TextView
+                android:id="@+id/printAdmissionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:ellipsize="none"/>
+
+
+            <TextView
+                android:id="@+id/printICU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"/>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ImagicaActivity"    
+     >
+
+
+    <TextView
+         android:id="@+id/aDate"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         >
+	</TextView>
+     
+     <ImageButton
+         android:id="@+id/calendarButton"
+         android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/aDate"
+         android:src="@drawable/calendar" />
+
+</RelativeLayout>
+</LinearLayout>
+
+
+<com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:layout_above="@+id/next">
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/next">
+        
+ 	<CheckBox
+        android:id="@+id/RespCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Respiration" 
+        android:checked="true"/>
+
+ 	<CheckBox
+        android:id="@+id/BPCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BP" 
+        android:checked="true"/>
+
+ 	<CheckBox
+        android:id="@+id/TempCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temp" 
+        android:checked="true"/>
+
+            
+    </TableRow> 
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/next">
+
+ 	<CheckBox
+        android:id="@+id/PulseCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pulse" 
+        android:checked="true"/>
+
+ 	<CheckBox
+        android:id="@+id/PAPCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAP" 
+        android:checked="true"/>
+
+ 	<CheckBox
+        android:id="@+id/CVPCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CVP" 
+        android:checked="true"/>
+
+        
+    </TableRow>
+
+</TableLayout>
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/errorMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16.0sp"
+                android:layout_marginTop="10dp"
+                android:layout_above="@+id/next"
+                 />
+
+
+   <ImageButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_arrow" 		
+		android:layout_alignParentBottom="true"
+        
+        />
+
+
+
+<TableLayout
+    android:id="@+id/TableLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0" 
+    android:layout_below="@+id/imagicaLayout"
+    >
+    
+</TableLayout>
+  				
+</RelativeLayout>
